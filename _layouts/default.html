@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+﻿<!DOCTYPE html>
+<html>
 <head>
 <title>{{ page.title }}</title>
 {% include externals.html %}
@@ -13,19 +13,15 @@
 <div class="row">
     <div class="span12">
         <div class="blogHeader">
-            <h1>BraveLocation Blog</h1>
-            <p>Web, Mobile and Big Data stuff</p> 
+            <h1>blogHeader Class</h1>
+            <p>Sub head text!</p> 
         </div>
     </div>
 </div>
 <!-- end blog header -->
 
 <!-- Begin Body Columns -->
-<div class="row">
-    <div class="span10"> <!-- Main content column -->
-            {{ content }}
-    </div> <!-- End main content -->
-    
+<div class="row">    
     <div class="span2"> <!-- Main sidebar -->
 		<div>
 			{% capture get_items %}
@@ -47,6 +43,9 @@
 			</ul>
 		</div>
 	</div> <!-- End main sidebar -->
+    <div class="span10"> <!-- Main content column -->
+            {{ content }}
+    </div> <!-- End main content -->
 </div> <!-- End main container --> 
 
 </body>
