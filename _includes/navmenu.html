@@ -7,6 +7,10 @@
     {% capture num_words %}
     {{ get_items | split:' ' | sort | join:' ' | number_of_words }}
     {% endcapture %}
+    <h3 class="navlinks">
+        <a href="http://components.assemblyprocess.com">Components.</a>
+        <a href="http://assemblyprocess.com">Assembly Process</a>
+    </h3>
     <h3 class="sidebarHeader">Categories:</h3>
     <ul>
     {% for item in (1..num_words) %}
