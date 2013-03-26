@@ -6,9 +6,9 @@ tags : [intro, beginner, jekyll, tutorial]
 ---
 {% include JB/setup %}
 
-# HOLY CRAPY
+## HOLY CRAPY
 
-## Things
+### Things
 
 ### Hello, world.
 
