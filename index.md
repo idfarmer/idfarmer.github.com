@@ -14,6 +14,7 @@ tagline: Supporting tagline
             <li><a href="{{ BASE_PATH }}/tags/{{ tag }}">{{ tag }}</a></li> 
           {% endfor %}
         </ul>
+    {{ post.content }}
     </li>
   {% endfor %}
 </ul>
