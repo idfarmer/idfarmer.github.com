@@ -6,43 +6,11 @@
 <meta property="og:title" content="{{ page.title }}"/>
 </head>
 <body>
-{% include navbar.html %}
 <div class="container"> <!-- Main container -->
-
-<!-- blog header -->
-<div class="row">
-    <div class="span12">
-        <div class="blogHeader">
-            <h1>blogHeader Class</h1>
-            <p>Sub head text!</p> 
-        </div>
-    </div>
-</div>
-<!-- end blog header -->
-
 <!-- Begin Body Columns -->
-<div class="row">    
-    <div class="span2"> <!-- Main sidebar -->
-		<div>
-			{% capture get_items %}
-			{% for cat in site.categories %}
-			{{ cat | first | replace: ' ', '_' }}
-			{% endfor %}
-			{% endcapture %}
-			{% capture num_words %}
-			{{ get_items | split:' ' | sort | join:' ' | number_of_words }}
-			{% endcapture %}
-			<h3 class="sidebarHeader">Categories:</h3>
-			<ul>
-			{% for item in (1..num_words) %}
-				{% capture this_word %}
-				{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
-				{% endcapture %}
-				<li><a href="/categories.html#{{ this_word }}">{{ this_word }}</a></li>
-			{% endfor %}
-			</ul>
-		</div>
-	</div> <!-- End main sidebar -->
+<div class="row">
+    {% include navmenu.html %}
+ <!-- End main sidebar -->
     <div class="span10"> <!-- Main content column -->
             {{ content }}
     </div> <!-- End main content -->
