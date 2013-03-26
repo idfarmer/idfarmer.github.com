@@ -4,9 +4,8 @@ category : lessons
 tagline: "WHAM!"
 tags : [intro, beginner, jekyll, tutorial]
 ---
-{% include JB/setup %}
 
-## HOLY CRAPY
+## Good Evening.
 
 ### Things
 
