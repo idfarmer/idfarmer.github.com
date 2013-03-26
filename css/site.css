@@ -1,0 +1,36 @@
+.blogAboutPost { 
+	font-style:italic; 
+	font-size: small;
+}
+
+.blogHeader {
+        background: url('http://www.bravelocation.com/images/background.jpg') left top no-repeat;
+		padding:20px;
+		margin-bottom:30px;
+		background-color:#fff;
+		-webkit-border-radius:6px;
+		-moz-border-radius:6px;
+		border-radius:6px;
+		color: #fff;
+}
+
+.blogHeader h1 {
+	margin-bottom:0;
+	font-size:50px;
+	line-height:1;
+	letter-spacing:-1px;
+	color: #fff;
+}
+
+.blogHeader p {
+	font-size:18px;
+	font-weight:200;
+	line-height:27px;
+	color: #fff;
+}
+
+h3.sidebarHeader {
+	padding: 20px 0px 0px 0px;
+}
+
+
