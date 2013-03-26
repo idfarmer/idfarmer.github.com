@@ -16,10 +16,10 @@ Here's another thing.
 How exciting.
 
 {% assign nItems = 3 %}
-{% include carousel %}
+{% include carousel.html %}
 
 <div class="item">[![Alt text](http://farm8.staticflickr.com/7194/6881991229_091fe39c32_o.jpg)](http://www.flickr.com/photos/idfarmer/6881991229/in/photostream/)</div>
 <div class="item">[![Alt text](http://farm8.staticflickr.com/7194/6881991229_091fe39c32_o.jpg)](http://www.flickr.com/photos/idfarmer/6881991229/in/photostream/)</div>
 <div class="item">[![Alt text](http://farm8.staticflickr.com/7194/6881991229_091fe39c32_o.jpg)](http://www.flickr.com/photos/idfarmer/6881991229/in/photostream/)</div>
 
-{% include endcarousel %}
+{% include endcarousel.html %}
