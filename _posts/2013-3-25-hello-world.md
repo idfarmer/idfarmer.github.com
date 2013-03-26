@@ -16,4 +16,4 @@ Here are some things.
 Here's another thing.
 How exciting.
 
-[![Alt text](http://farm8.staticflickr.com/7044/6881992031_e38c59037b_o.jpg)](http://www.flickr.com/photos/idfarmer/6881992031/in/photostream/)
+[![Alt text](http://farm8.staticflickr.com/7194/6881991229_091fe39c32_o.jpg)](http://www.flickr.com/photos/idfarmer/6881991229/in/photostream/)
