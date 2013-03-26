@@ -1,6 +1,6 @@
 <div id="myCarousel" class="carousel slide">
   <ol class="carousel-indicators">
-  {{ nItems | split:, }}
+  {{ {{ nItems }} | split:, }}
   {% for item in pnItems %}
     <li data-target="#myCarousel" data-slide-to="{{ forloop.index0 }}"></li>
   {% endfor %}
