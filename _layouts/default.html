@@ -8,9 +8,10 @@
 <body>
 <div class="container"> <!-- Main container -->
 <!-- Begin Body Columns -->
-<div class="row">
-    {% include navmenu.html %}
- <!-- End main sidebar -->
+<div class="row-fluid">
+    <div class="span2"> <!-- Main sidebar -->
+	{% include navmenu.html %}
+    </div> <!-- End main sidebar -->
     <div class="span10"> <!-- Main content column -->
             {{ content }}
     </div> <!-- End main content -->
