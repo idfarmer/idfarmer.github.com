@@ -11,7 +11,7 @@ tagline: Supporting tagline
       <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
         <ul class="tags">
           {% for tag in post.tags %}
-            <li><a href="{{ BASE_PATH }}/{{ tag }}">{{ tag }}</a></li> 
+            <li><a href="{{ BASE_PATH }}/tags/{{ tag }}">{{ tag }}</a></li> 
           {% endfor %}
         </ul>
     </li>
