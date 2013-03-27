@@ -1,13 +1,7 @@
 </div> <!-- end postbody -->
 <div class="span2 offset1 postmeta">
-
-
-<div class=""><a href="{{ post.url }}">{{ post.title }}</a></div>
-<div class="">{{ post.date | date: "%B %e, %Y" }}</div>
-<div class="">Categories: 
-		{% for category in post.categories %}
-			<a href="/categories.html#{{ category }}">{{ category }}</a>;
-		{% endfor %}
-</div>
+    <div>Post Title with permalink</div>
+    <div>Post Date </div>
+    <div>Categories:</div>
 </div>
 <div class="span8"><hr /></div>
