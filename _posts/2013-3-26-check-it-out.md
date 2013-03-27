@@ -3,6 +3,7 @@ layout: post
 category : test_category
 tagline: "WHAM!"
 tags : [intro, beginner, jekyll, tutorial]
+title: Check it Out
 ---
 {{ title }}
 {% include carousel.html %}
