@@ -2,7 +2,8 @@
 <div class="span2 offset1 postmeta">
 
 
-<h2 class="blogPostHeader"><a href="{{ post.url }}">{{ post.title }}</a> <span class="muted">{{ post.date | date: "%B %e, %Y" }}</span></h2>
+<div class="blogPostHeader"><a href="{{ post.url }}">{{ post.title }}</a></div>
+<div class="muted">{{ post.date | date: "%B %e, %Y" }}</div>
 <div class="categories">Categories: 
 		{% for category in post.categories %}
 			<a href="/categories.html#{{ category }}"><i>{{ category }}</i></a>;
