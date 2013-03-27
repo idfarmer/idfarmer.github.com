@@ -3,7 +3,7 @@
 <link rel="icon" href="/favicon.ico" />
 <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
 <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet" type="text/css" />
-<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="/css/bootstrap.css">
 {% capture contenthtml %}{% if page.content contains '%' %}Brave Location Blog Home Page{% else %}{{ page.content | markdownify  }} ...{% endif %}{% endcapture %}
 {% capture contentescaped %}{{ contenthtml | replace:'"',''  }}{% endcapture %}
 {% capture contenttext %}{{ contentescaped | strip_html  }}{% endcapture %}
