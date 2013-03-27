@@ -17,7 +17,7 @@ title: Assembly Process
 		{% capture image_urls %} {{ url }} {% endcapture %}
 		
 		
-		<li>Image: <a href="{{ {{ image_urls | split:~~~ | image_urls[0]}} }}"><img src="{{ image_urls | split:~~~ | image_urls[1]}} }}"</a></li>
+		<li>Image: <a href="{{ image_urls | split:~~~ | image_urls[0]}}"><img src="{{ image_urls | split:~~~ | image_urls[1]}}"</a></li>
 	{% endfor %}
 	{% endif %}
 	</ul>
