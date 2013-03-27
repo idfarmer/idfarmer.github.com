@@ -10,9 +10,8 @@ title: Assembly Process
 	<li>Post URL: {{ post.url }}</li>
 	<li>Post Title: {{ post.title }}</li>
 	<li>Post Date: {{ post.date | date: "%B %e, %Y" }}</li>
-	{% if image_or_carousel == true}
-	<li>Image: <a href="{{ post.image1.0 }}"><img src={{ post.image1.1 }}</a></li>
-	{% endif %}
+	<li>Image: <a href="{{ post.image1[0] }}"><img src={{ post.image1[1] }}</a></li>
+	
 	</ul>
       	{{ post.content }}
 	
