@@ -4,6 +4,7 @@ category : test_category
 tagline: "WHAM!"
 tags : [intro, beginner, jekyll, tutorial]
 ---
+{{ post.title }}{{ post.title }}
 
 <a href="http://www.flickr.com/photos/idfarmer/6882093965/in/photostream/"><img src="http://farm8.staticflickr.com/7207/6882093965_d4237d0633_b.jpg"></a>
 {% include postbody.html %}
