@@ -28,7 +28,6 @@ h3.navlinks{
 a .navdeselected {
 	color: #CCCCCC;
 	font-size: 18.5px;
-	text-decoration: line-through;
 }
 
 a:hover .navdeselected {
