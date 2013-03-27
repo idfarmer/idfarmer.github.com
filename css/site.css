@@ -27,3 +27,7 @@ h3.navlinks{
 a .deselected {
 	color: #CCCCCC;
 }
+
+a:hover .deselected {
+	color: #333333;
+}
