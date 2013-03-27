@@ -4,7 +4,11 @@ title: Assembly Process
 ---
 
 {% for post in paginator.posts %}
-	<article class="waspost">
+	<article class="post">
+	
+	{% capture post_url%}{{ post.url }}{% endcapture%}
+	{% capture post_title%}{{ post.title }}{% endcapture%}
+	{% capture post_url%}{{ post.date | date: "%B %e, %Y" }}{% endcapture%}
       	{{ post.content }}
 	</article>
 {% endfor %}
