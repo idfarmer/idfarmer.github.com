@@ -18,6 +18,6 @@ h3.navlinks{
 	line-height: 24px;
 }
 
-h3.navlinks.deselected{
+h3.navlinks deselected{
 	color:#888888;
 }
