@@ -35,5 +35,6 @@ a:hover .navdeselected {
 }
 
 a .navresize {
-	font-size: 30px;
+	font-size: 28.5px;
+	font-weight: 400;
 }
