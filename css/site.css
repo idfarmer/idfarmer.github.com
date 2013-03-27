@@ -30,6 +30,12 @@ article{
 	
 }
 
+.logo{	
+	background-color: #DDDDDD;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
 
 .logo a{
 	display: block;
