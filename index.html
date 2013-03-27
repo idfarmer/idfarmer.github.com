@@ -14,7 +14,10 @@ title: Assembly Process
 	<li>Site Tags: {{ post.tags[1] }}</li>
 	{% if Image == True %}
 	{% for url in post.images %}
-		<li>Image: <a href="{{ url }}"><img src=" {{ url }}"</a></li>
+		{% capture image_urls %} {{ url }} {% endcapture %}
+		{ image_urls | split:' ' | imgurl }}
+		
+		<li>Image: <a href="{{ imgurl[0] }}"><img src="{{ imgurl[1] }}"</a></li>
 	{% endfor %}
 	{% endif %}
 	</ul>
