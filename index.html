@@ -6,10 +6,10 @@ title: Assembly Process
 {% for post in paginator.posts %}
 	<article class="post">
 	<ul>
-	<li>{{ site.url }}</li>
-	<li>{{ post.url }}</li>
-	<li>{{ post.title }}</li>
-	<li>{{ post.date | date: "%B %e, %Y" }}</li>
+	<li>Site URL: {{ site.url }}</li>
+	<li>Post URL: {{ post.url }}</li>
+	<li>Post Title: {{ post.title }}</li>
+	<li>Post Date: {{ post.date | date: "%B %e, %Y" }}</li>
 	</ul>
       	{{ post.content }}
 	
