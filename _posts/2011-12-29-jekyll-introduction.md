@@ -4,11 +4,10 @@ category : lessons
 tagline: "Supporting tagline"
 tags : [intro, beginner, jekyll, tutorial]
 ---
-{% include JB/setup %}
 
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
 Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
-
+{% include postbody.html %}
 ## Overview 
 
 ### What is Jekyll?
@@ -20,3 +19,4 @@ Ordering is an important part of Jekyll but it is hard to specify a custom order
 
 **Tags**   
 Posts can have tags associated with them as part of their meta-data.
+{% include endpostbody.html %}
