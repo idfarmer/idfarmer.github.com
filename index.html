@@ -15,7 +15,7 @@ title: Assembly Process
 	{% if Image == True %}
 	{% for url in post.images %}
 		{% capture image_urls %} {{ url }} {% endcapture %}
-		{{ image_urls | split:"~~~" | [0] }}
+		{{ image_urls | split:"~~~" | image_urls[0] }}
 		{{ image_urls | split:"~~~" | [1] }}
 		
 		
