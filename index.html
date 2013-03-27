@@ -13,8 +13,9 @@ title: Assembly Process
 	<li>Site Tagline: {{ post.tagline }}</li>
 	<li>Site Tags: {{ post.tags[1] }}</li>
 	{% if Image == True %}
-	
-		<li>Image: <a href="{{ post.images[0] }}"><img src=" {{ post.images[1] }}"</a></li>
+	{% for url in post.images %}
+		<li>Image: <a href="{{ url }}"><img src=" {{ url }}"</a></li>
+	{% endfor %}
 	{% endif %}
 	</ul>
       	{{ post.content }}
