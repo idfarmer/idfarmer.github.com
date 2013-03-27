@@ -4,10 +4,16 @@ body{
 }
 
 a {
-	color: #222222;	
+	color: #444444;	
 }
 
 a:hover {
 	color: #333333;
 	background-color: #C8FF00;
+	text-decoration: none;
+}
+
+.navlinks h3 {
+	text-transform: capitalize;
+	line-height: 30px;
 }
