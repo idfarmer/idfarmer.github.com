@@ -10,7 +10,7 @@ tags : [intro, beginner, jekyll, tutorial]
 <div class="item"><a href="http://www.flickr.com/photos/idfarmer/6882097967/in/photostream/"><img src ="http://farm8.staticflickr.com/7198/6882097967_2c383d36c7_b.jpg"></a></div>
 
 {% include endcarousel.html %}
-
+{% include postbody.html %}
 Good Evening.
 
 Things
@@ -20,3 +20,4 @@ Hello, world.
 Here are some things.
 Here's another thing.
 How exciting.
+{% include endpostbody.html %}
