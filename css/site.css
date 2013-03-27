@@ -49,3 +49,8 @@ a .navresize {
 	font-size: 28.5px;
 	font-weight: 400;
 }
+
+
+.postbody {
+	margin: 0 !important;
+}
