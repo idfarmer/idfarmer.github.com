@@ -1,11 +1,11 @@
 ---
 layout: post
 category : test_category
-tagline: "WHAM!"
+tagline: WHAM!
 tags : [intro, beginner, jekyll, tutorial]
 image_or_carousel: true
-image1a :"http://www.flickr.com/photos/idfarmer/6882096993/in/photostream/"
-image1scr :"http://farm8.staticflickr.com/7209/6882096993_633bc9a2c5.jpg"
+image1a : http://www.flickr.com/photos/idfarmer/6882096993/in/photostream/
+image1scr : http://farm8.staticflickr.com/7209/6882096993_633bc9a2c5.jpg
 ---
 
 This is what it looks like when you lead off with a big fat image. Isn't it nice?
