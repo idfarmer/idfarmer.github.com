@@ -5,7 +5,7 @@ title: Assembly Process
 
 {% for post in paginator.posts %}
 	<article class="post">
-	
+	{{ site.url }}
 	{{ post.url }}
 	{{ post.title }}
 	{{ post.date | date: "%B %e, %Y" }}
