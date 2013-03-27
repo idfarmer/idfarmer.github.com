@@ -25,10 +25,15 @@ h3.navlinks{
 	line-height: 24px;
 }
 
-a .deselected {
+a .navdeselected {
 	color: #CCCCCC;
+	font-size: 18.5px;
 }
 
-a:hover .deselected {
+a:hover .navdeselected {
 	color: #333333;
+}
+
+a .navresize {
+	font-size: 30px;
 }
