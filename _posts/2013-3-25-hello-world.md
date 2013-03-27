@@ -6,7 +6,6 @@ tags : [intro, beginner, jekyll, tutorial]
 ---
 
 
-{{ post_title }}
 {% include postbody.html %}
 Good Evening.
 
