@@ -6,7 +6,7 @@
 <div class="">{{ post.date | date: "%B %e, %Y" }}</div>
 <div class="">Categories: 
 		{% for category in post.categories %}
-			<a href="/categories.html#{{ category }}"><i>{{ category }}</i></a>;
+			<a href="/categories.html#{{ category }}">{{ category }}</a>;
 		{% endfor %}
 </div>
 </div>
