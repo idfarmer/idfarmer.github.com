@@ -20,6 +20,10 @@ a:hover{
 	text-decoration: none;
 }
 
+article{
+	padding: 20px 0 20px 0;
+}
+
 .foobar{
 	border-top: solid 3px #333333;
 	padding-bottom: 40px;
