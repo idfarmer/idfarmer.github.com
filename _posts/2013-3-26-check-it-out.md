@@ -12,4 +12,7 @@ title: Check it Out
 {% include postbody.html %}
 This is what it looks like when you lead off with a carousel. Isn't it nice?
 Yeah, it's alright.
+
+Here's another image... now inline!
+<a href="http://www.flickr.com/photos/idfarmer/6882093965/in/photostream/"><img src="http://farm8.staticflickr.com/7207/6882093965_d4237d0633_b.jpg"></a>
 {% include endpostbody.html %}
