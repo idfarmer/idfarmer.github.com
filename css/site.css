@@ -13,7 +13,7 @@ a:hover{
 	text-decoration: none;
 }
 
-h3 .navlinks{
+h3 .navlinks a{
 	text-transform: capitalize;
 	line-height: 30px;
 }
