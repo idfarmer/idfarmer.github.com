@@ -10,7 +10,8 @@ title: Assembly Process
 	<li>Post URL: {{ post.url }}</li>
 	<li>Post Title: {{ post.title }}</li>
 	<li>Post Date: {{ post.date | date: "%B %e, %Y" }}</li>
-	<li>Image: <a href="{{ post.image1[0] }}"><img src={{ post.image1[1] }}</a></li>
+	<li>Site Tagline: {{ post.tagline }}</li>
+	<li>Image: <a href="{{ post.image1a }}"><img src={{ post.image1src }}</a></li>
 	
 	</ul>
       	{{ post.content }}
