@@ -3,6 +3,13 @@ body{
 	
 }
 
+hr{
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #dddddd;
+}
+
 a {
 	color: #444444;	
 }
