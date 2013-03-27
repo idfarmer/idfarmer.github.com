@@ -5,6 +5,7 @@ title: Assembly Process
 
 {% for post in paginator.posts %}
 	<article class="post">
+	{{ post.content }}
 	<ul>
 	<li>Site URL: {{ site.url }}</li>
 	<li>Post URL: {{ post.url }}</li>
