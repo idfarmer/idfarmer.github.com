@@ -5,11 +5,11 @@ tagline: "WHAM!"
 tags : [intro, beginner, jekyll, tutorial]
 ---
 
-## Good Evening.
+Good Evening.
 
-### Things
+Things
 
-### Hello, world.
+Hello, world.
 
 Here are some things.
 Here's another thing.
