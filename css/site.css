@@ -16,17 +16,17 @@ a {
 
 a:hover{
 	color: #333333;
-	background-color: #0088cc;
+	background-color: #00C483;
 	text-decoration: none;
 }
 
 article{
-	padding: 40px 0 40px 0;
+	padding: 10px 0 40px 0;
 }
 
 .foobar{
 	border-top: solid 3px #333333;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	
 }
 
