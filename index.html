@@ -12,10 +12,10 @@ title: Assembly Process
 	<li>Post Date: {{ post.date | date: "%B %e, %Y" }}</li>
 	<li>Post Tagline: {{ post.tagline }}</li>
 	<li>Post Tags: {{ post.tags[1] }}</li>
-	{% if number_of_images < 0 %}
-		Image variable is {{ number_of_images }}
+	{% if post.number_of_images > 0 %}
+		Image variable is {{ post.number_of_images }}
 		
-		{% if image < 1 %}
+		{% if post.number_of_images > 1 %}
 			<li>{{ post.images | size }} Hot Diggity </li>
 		{% else %}
 			<li>{{ post.images | size }} Not Diggity </li>
