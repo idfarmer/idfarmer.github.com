@@ -3,7 +3,7 @@ layout: post
 category : test_category
 tagline: WHAM!
 tags : [intro, beginner, jekyll, tutorial]
-image: true
+image: 2
 images :
  - http://www.flickr.com/photos/idfarmer/6882096993/in/photostream/ : http://farm8.staticflickr.com/7209/6882096993_633bc9a2c5.jpg
  - http://google.com : https://www.google.com/images/srpr/logo4w.png
