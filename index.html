@@ -16,7 +16,7 @@ title: Assembly Process
 		<li>Number of Images: {{post.images | size}}</li>
 		{% for image in post.images %}
 			{% for image_url in image %}
-				<li>Image: <a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"</a></li>
+				<li>Image: <a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></li>
 			{% endfor %}
 		{% endfor %}
 	{% endif %}
