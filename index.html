@@ -12,7 +12,7 @@ title: Assembly Process
 	<li>Post Date: {{ post.date | date: "%B %e, %Y" }}</li>
 	<li>Post Tagline: {{ post.tagline }}</li>
 	<li>Post Tags: {{ post.tags[1] }}</li>
-	{% if post.number_of_images > 0 %}
+	{% if post.number_of_images > True %}
 		Image variable is {{ post.number_of_images }}
 		
 		{% if post.number_of_images > 1 %}
