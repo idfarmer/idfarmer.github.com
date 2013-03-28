@@ -10,8 +10,8 @@ title: Assembly Process
 	<li>Post URL: {{ post.url }}</li>
 	<li>Post Title: {{ post.title }}</li>
 	<li>Post Date: {{ post.date | date: "%B %e, %Y" }}</li>
-	<li>Site Tagline: {{ post.tagline }}</li>
-	<li>Site Tags: {{ post.tags[1] }}</li>
+	<li>Post Tagline: {{ post.tagline }}</li>
+	<li>Post Tags: {{ post.tags[1] }}</li>
 	{% if Image == True %}
 		<li>Number of Images: {{post.images | size}}</li>
 		{% for image in post.images %}
@@ -20,6 +20,7 @@ title: Assembly Process
 			{% endfor %}
 		{% endfor %}
 	{% endif %}
+	<li>Post Embeded Item: {{ post.embed }}</li>
 	</ul>
       	{{ post.content }}
 	
