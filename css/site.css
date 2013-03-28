@@ -24,6 +24,12 @@ article{
 	padding: 0px 0 40px 0;
 }
 
+ul, ol {
+	padding: 0;
+	margin: 0 0 0px 0px;
+	list-style: none;
+}
+
 .foobar{
 	border-top: solid 3px #333333;
 	padding-bottom: 20px;
