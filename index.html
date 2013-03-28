@@ -13,7 +13,7 @@ title: Assembly Process
 	<li>Post Tagline: {{ post.tagline }}</li>
 	<li>Post Tags: {{ post.tags[1] }}</li>
 	{% if image == True %}
-		{% capture image_number %} {{ post.images | size }} {% endcapture %}
+		{{ post.images | size }}
 		{% if image_number > 1%}
 			<li>{{ post.images | size }} Hot Diggity </li>
 		{% else %}
