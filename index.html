@@ -41,6 +41,21 @@ title: Assembly Process
 
 <!-- Pagination links -->
 <div class="pagination">
+	<ul>
+		<li>
+			{% if paginator.previous_page == 1 %} <a href="/#Please-wait-for-future-to-load">Towards The Future</a> {% elsif paginator.previous_page < 1 %} <a href="/{{ paginator.previous_page }}">Towards The Present</a> {% else %} <a href="/">There's A Problem</a>{% endif %}
+		</li>
+		<li>
+			Page #{{ paginator.page }}
+		</li>
+		<li>
+			{% if paginator.next_page == paginator.total_pages %} <a href="">The Beginning</a> {% else %}<a href="/{{ paginator.next_page }}">Towards The Past</a>
+		</li>
+	</ul>
+</div>
+
+
+<div class="pagination">
   <ul>
 	{% if paginator.previous_page %}
 	<li>{% if paginator.previous_page == 1 %}<a href="/#Please-wait-for-future-to-load">To The Future</a>{% else %}<a href="/page{{paginator.previous_page}}">To The Past</a>{% endif %}</li>
