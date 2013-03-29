@@ -4,8 +4,8 @@ server:      false
 server_port: 4000
 baseurl:    /
 url: http://localhost:4000
-paginate:    5
-root_uri: http://blog.bravelocation.com
+paginate:    1
+root_uri: http://assemblyprocess.com
 
 source:      .
 destination: ./_site
