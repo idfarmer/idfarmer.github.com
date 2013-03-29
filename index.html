@@ -43,13 +43,13 @@ title: Assembly Process
 <div class="pagination">
 	<ul>
 		<li>
-			{% if paginator.previous_page < 1 %} <a>Toward the future</a> {% elsif paginator.previous_page == 1 %} <a href="/">Toward the present</a> {% else %} <a href="/page{{ paginator.previous_page }}/">Toward the present</a> {% endif %}
+			{% if paginator.previous_page < 1 %} <a href="#Please-wait-for-future-to-load">Toward the future</a> {% elsif paginator.previous_page == 1 %} <a href="/">Toward the present</a> {% else %} <a href="/page{{ paginator.previous_page }}/">Toward the present</a> {% endif %}
 		</li>
 		<li>
-			<a>Currently displaying page {{ paginator.page }}</a>
+			<a href="">Currently displaying page {{ paginator.page }}</a>
 		</li>
 		<li>
-			{% if paginator.next_page == paginator.total_pages %} <a class="disabled">The Beginning</a> {% else %}<a href="/page{{ paginator.next_page }}/">Toward the past</a> {% endif %}
+			{% if paginator.next_page == paginator.total_pages %} <a href="" class="disabled">The Beginning</a> {% else %}<a href="/page{{ paginator.next_page }}/">Toward the past</a> {% endif %}
 		</li>
 	</ul>
 </div>
