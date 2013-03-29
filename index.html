@@ -16,12 +16,18 @@ title: Assembly Process
 			{% endfor %}
 		{% endfor %}
 	{% elsif post.number_of_images >= 2 %}
-		Elsif Worked. Image variable is {{ post.number_of_images }}
-		{% for image in post.images %}
-			{% for image_url in image %}
-				<li>Image: <a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></li>
-			{% endfor %}
-		{% endfor %}
+		<div id="myCarousel-{{page.id}}" class="carousel slide">
+			<!-- Carousel items -->
+			<div class="carousel-inner">
+				{% for image in post.images %}
+					{% for image_url in image %} <li>Image: <a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></li> {% endfor %}
+				{% endfor %}
+			</div>
+
+			<!-- Carousel nav -->
+			<a class="carousel-control left" href="#myCarousel-{{page.id}}" data-slide="prev">&lsaquo;</a>
+			<a class="carousel-control right" href="#myCarousel-{{page.id}}" data-slide="next">&rsaquo;</a>
+		</div>
 	
 	{% endif %}
 	{% if post.embed  %} <li>{{ post.embed }}</li> {% endif %}
