@@ -5,14 +5,11 @@ title: Assembly Process
 
 {% for post in paginator.posts %}
 	<article class="post">
-	<ul>
-
-	<li>Number of images: {{ post.number_of_images }}</li>
 	{% if post.number_of_images == 1 %}
 		If Worked. Image variable is {{ post.number_of_images }}
 		{% for image in post.images %}
 			{% for image_url in image %}
-				<li>Image: <a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></li>
+				Image: <a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a>
 			{% endfor %}
 		{% endfor %}
 	{% elsif post.number_of_images >= 2 %}
@@ -33,7 +30,6 @@ title: Assembly Process
 	
 	{% endif %}
 	{% if post.embed  %} <li>{{ post.embed }}</li> {% endif %}
-	</ul>
 	<h2>{{ post.title }}</h2>
 	<h3 class="tagline">{{ post.tagline }}</li></h3>
 		<ul class="postmeta">
