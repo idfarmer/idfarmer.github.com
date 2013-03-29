@@ -43,17 +43,30 @@ title: Assembly Process
 <div class="pagination">
 	<ul>
 		<li>
-			{% if paginator.previous_page == 1 %} <a href="/#Please-wait-for-future-to-load">Towards The Future</a> {% elsif paginator.previous_page < 1 %} <a href="/{{ paginator.previous_page }}">Towards The Present</a> {% else %} <a href="/">There's A Problem</a>{% endif %}
+			{% if paginator.previous_page == 1 %} <a href="/#Please-wait-for-future-to-load">Towards The Future</a> {% else %} <a href="/{{ paginator.previous_page }}">Towards The Present</a> {% endif %}
 		</li>
 		<li>
 			Page #{{ paginator.page }}
 		</li>
 		<li>
-			{% if paginator.next_page == paginator.total_pages %} <a href="">The Beginning</a> {% else %}<a href="/{{ paginator.next_page }}">Towards The Past</a>
+			{% if paginator.next_page == paginator.total_pages %} <a href="">The Beginning</a> {% else %}<a href="/{{ paginator.next_page }}">Towards The Past</a> {% endif %}
 		</li>
 	</ul>
 </div>
 
 
-
+<div class="pagination">
+  <ul>
+	{% if paginator.previous_page %}
+	<li>{% if paginator.previous_page == 1 %}<a href="/#Please-wait-for-future-to-load">To The Future</a>{% else %}<a href="/page{{paginator.previous_page}}">To The Past</a>{% endif %}</li>
+	{% else %}
+	<li class="disabled"><a href="/">&laquo;</a></li>
+	{% endif %}    
+	{% if paginator.page == 1 %}<li class="active"><a href="/">1</a></span>{% else %}<li><a href="/">1</a></li>{% endif %}
+	{% for count in (2..paginator.total_pages) %}
+	{% if count == paginator.page %}<li class="active"><a href="/page{{count}}">{{count}}</a></li>{% else %}<li><a href="/page{{count}}">{{count}}</a></li>{% endif %}
+	{% endfor %}
+	{% if paginator.next_page %}<li><a href="/page{{paginator.next_page}}">&raquo;</a></li>{% else %}<li class="disabled">&raquo;</li>{% endif %}
+  </ul>
+</div>
 <!-- End pagination -->
