@@ -16,6 +16,12 @@ title: Assembly Process
 		<div id="myCarousel-{{page.id}}" class="carousel slide">
 			<!-- Carousel items -->
 			<div class="carousel-inner">
+				<ol class="carousel-indicators">
+				{% for image in post.images %}
+					{% if forloop.first %} <li data-target="#myCarousel-{{page.id}}" data-slide-to="0" class="active"></li>
+					{% else %} <li data-target="#myCarousel-{{page.id}}" data-slide-to="{{ forloop.index0 }}"></li>
+					{% endif %}
+				</ol>
 				{% for image in post.images %}
 					{% if forloop.first %}{% for image_url in image %} <div class="item active" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
 					{% else %}{% for image_url in image %} <div class="item" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
