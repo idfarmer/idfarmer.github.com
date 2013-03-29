@@ -24,7 +24,7 @@ title: Assembly Process
 		{% endfor %}
 	
 	{% endif %}
-	{% if post.embed == True and not post.number_of_images == not False %} <li>{{ post.embed }}</li> {% endif %}
+	{% if post.embed and not post.number_of_images %} <li>{{ post.embed }}</li> {% endif %}
 	</ul>
 	<h2>{{ post.title }}</h2>
 	<h3 class="tagline">{{ post.tagline }}</li></h3>
