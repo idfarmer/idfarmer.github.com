@@ -35,38 +35,38 @@ title: Assembly Process
 		<h3 class="tagline">{{ post.tagline }}</li></h3>
 		<h4>{{ post.date | date: "%B %e, %Y" }}</h4>
 		<ul>
-    {% capture get_items %}
-    {% for cat in post.category %}
-    {{ cat | first | replace: ' ', '_' }}
-    {% endfor %}
-    {% endcapture %}
-    {% capture num_words %}
-    {{ get_items | split:' ' | sort | join:' ' | number_of_words }}
-    {% endcapture %}
-
-    {% for item in (1..num_words) %}
-            {% capture this_word %}
-            {{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
-            {% endcapture %}
-            <li class="category"><a href="/categories.html#{{ this_word }}">{{ this_word }}</a></li>
-    {% endfor %}
-    
-    {% capture get_items %}
-    {% for cat in post.tags %}
-    {{ cat | first | replace: ' ', '_' }}
-    {% endfor %}
-    {% endcapture %}
-    {% capture num_words %}
-    {{ get_items | split:' ' | sort | join:' ' | number_of_words }}
-    {% endcapture %}
-
-    {% for item in (1..num_words) %}
-            {% capture this_word %}
-            {{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
-            {% endcapture %}
-            <li class="tag"><a href="/tags.html#{{ this_word }}">{{ this_word }}</a></li>
-    {% endfor %}
-</ul>
+			{% capture get_items %}
+			{% for cat in post.category %}
+			{{ cat | first | replace: ' ', '_' }}
+			{% endfor %}
+			{% endcapture %}
+			{% capture num_words %}
+			{{ get_items | split:' ' | sort | join:' ' | number_of_words }}
+			{% endcapture %}
+		    
+			{% for item in (1..num_words) %}
+				{% capture this_word %}
+				{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
+				{% endcapture %}
+				<li class="category"><a href="/categories.html#{{ this_word }}">{{ this_word }}</a></li>
+			{% endfor %}
+			
+			{% capture get_items %}
+			{% for cat in post.tags %}
+			{{ cat | first | replace: ' ', '_' }}
+			{% endfor %}
+			{% endcapture %}
+			{% capture num_words %}
+			{{ get_items | split:' ' | sort | join:' ' | number_of_words }}
+			{% endcapture %}
+		    
+			{% for item in (1..num_words) %}
+				{% capture this_word %}
+				{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
+				{% endcapture %}
+				<li class="tag"><a href="/tags.html#{{ this_word }}">{{ this_word }}</a></li>
+			{% endfor %}
+		</ul>
 	</div>
       	{{ post.content }}
 	<div class="span10 postbody"><hr /></div>
