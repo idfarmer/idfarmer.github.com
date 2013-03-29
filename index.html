@@ -20,7 +20,7 @@ title: Assembly Process
 			<!-- Carousel items -->
 			<div class="carousel-inner">
 				{% for image in post.images %}
-					{% for image_url in image %} <li>Image: <a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></li> {% endfor %}
+					{% for image_url in image %} <div class="item {% if forloop.first %}active {% endif %}" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
 				{% endfor %}
 			</div>
 
