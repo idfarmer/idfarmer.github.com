@@ -66,6 +66,11 @@ ul, ol {
 	background-color: #00C483;
 }
 
+#snippet{
+	text-align: left;
+	background-color: #EDEDED;
+}
+
 a .navdeselected {
 	color: #CCCCCC;
 	font-size: 18.5px;
