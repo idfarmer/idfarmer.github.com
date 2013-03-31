@@ -1,23 +1,15 @@
-<div>
-    {% capture get_items %}
-    {% for cat in site.categories %}
-    {{ cat | first | replace: ' ', '_' }}
-    {% endfor %}
-    {% endcapture %}
-    {% capture num_words %}
-    {{ get_items | split:' ' | sort | join:' ' | number_of_words }}
-    {% endcapture %}
+<div id="navmenu">
     <div class="logo">
         <a href="http://assemblyprocess.com"><img src="/assets/ap.png"></a>
     </div>
-    <h3 class="sidebarHeader">Categories:</h3>
-    <ul>
-    {% for item in (1..num_words) %}
-            {% capture this_word %}
-            {{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
-            {% endcapture %}
-            <li><a href="/categories.html#{{ this_word }}">{{ this_word }}</a></li>
-    {% endfor %}
+    <div id="snippet">
+        <p>Assembly Process is a design, documentation, and process blog run by Kyle Lawson.</p>
+    </div>
+    
+    <ul class="menu">
+        <li><a href="/about">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/categories">Categories</a></li>
     </ul>
 </div>
 <hr />
