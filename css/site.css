@@ -60,7 +60,10 @@ ul, ol {
 	text-align: center;
 	margin: 5px 0 5px 0;
 	background-color: #DDDDDD;
-	
+}
+
+.menu a:hover{
+	background-color: #00C483;
 }
 
 a .navdeselected {
