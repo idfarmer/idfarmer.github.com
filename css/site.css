@@ -60,6 +60,7 @@ ul, ol {
 	text-align: center;
 	margin: 5px 0 5px 0;
 	background-color: #DDDDDD;
+	text-transform: uppercase;
 }
 
 .menu a:hover li{
@@ -67,8 +68,10 @@ ul, ol {
 }
 
 #snippet{
-	text-align: left;
 	background-color: #EDEDED;
+	padding: 10px 6px 10px 6px;
+	font-size: 12px;
+	text-transform: none;
 }
 
 a .navdeselected {
