@@ -50,6 +50,19 @@ ul, ol {
 	
 }
 
+.menu ul{
+	width: 100%;
+	padding: 10px 0 10px 0;
+}
+
+.menu li{
+	padding: 10px 0 10px 0;
+	text-align: center;
+	margin: 5px 0 5px 0;
+	background-color: #DDDDDD;
+	
+}
+
 a .navdeselected {
 	color: #CCCCCC;
 	font-size: 18.5px;
