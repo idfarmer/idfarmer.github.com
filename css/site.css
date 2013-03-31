@@ -62,7 +62,7 @@ ul, ol {
 	background-color: #DDDDDD;
 }
 
-.menu a:hover{
+.menu a:hover li{
 	background-color: #00C483;
 }
 
