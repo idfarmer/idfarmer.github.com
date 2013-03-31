@@ -61,6 +61,7 @@ ul, ol {
 	margin: 5px 0 5px 0;
 	background-color: #DDDDDD;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .menu a:hover li{
