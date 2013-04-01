@@ -50,7 +50,7 @@ ul, ol {
 	
 }
 
-.menu .snippet, .pagination .snippet{
+.menu .snippet{
 	background-color: #EDEDED;
 	padding: 10px 6px 10px 6px;
 	font-size: 12px;
