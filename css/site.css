@@ -94,7 +94,13 @@ a .navresize {
 	margin: 0 !important;
 }
 
+.pagination-nav { display: block;}
 .pagination-nav ul {
 	display: inline-block;
 	width: 100%;
+}
+
+.pagination-nav li{
+	
+	
 }
