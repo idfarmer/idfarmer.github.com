@@ -96,14 +96,13 @@ a .navresize {
 	margin: 0 !important;
 }
 
-.pagination-nav { display: block;}
+.pagination-nav {
+
+}
 .pagination-nav ul {
 
 }
 
 .pagination-nav li{
-	display: inline;
-	padding: 10px;
-	margin: 0 5px 0 5px;
 	
 }
