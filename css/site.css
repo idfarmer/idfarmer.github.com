@@ -50,6 +50,13 @@ ul, ol {
 	
 }
 
+.snippet{
+	background-color: #EDEDED;
+	padding: 10px 6px 10px 6px;
+	font-size: 12px;
+	text-transform: none;
+}
+
 .menu ul{
 	width: 100%;
 	padding: 10px 0 10px 0;
@@ -68,12 +75,7 @@ ul, ol {
 	background-color: #00C483;
 }
 
-.snippet{
-	background-color: #EDEDED;
-	padding: 10px 6px 10px 6px;
-	font-size: 12px;
-	text-transform: none;
-}
+
 
 a .navdeselected {
 	color: #CCCCCC;
