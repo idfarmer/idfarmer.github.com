@@ -96,11 +96,10 @@ a .navresize {
 
 .pagination-nav { display: block;}
 .pagination-nav ul {
-	display: inline-block;
-	width: 100%;
+
 }
 
 .pagination-nav li{
-	
+	display: inline;
 	
 }
