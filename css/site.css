@@ -68,7 +68,7 @@ ul, ol {
 	background-color: #00C483;
 }
 
-#snippet{
+.snippet{
 	background-color: #EDEDED;
 	padding: 10px 6px 10px 6px;
 	font-size: 12px;
@@ -101,5 +101,7 @@ a .navresize {
 
 .pagination-nav li{
 	display: inline;
+	padding: 10px;
+	margin: 0 5px 0 5px;
 	
 }
