@@ -106,3 +106,14 @@ a .navresize {
 .pagination-nav li{
 	
 }
+
+.stuck{
+	position: fixed;
+}
+
+  [class*="span"],
+  .uneditable-input[class*="span"],
+  .row-fluid [class*="span"] {
+	position: relative !important;
+  }
+
