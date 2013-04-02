@@ -140,3 +140,10 @@ a .navresize {
 .title_info li{
 	display: inline;
 }
+
+
+.post_content{
+	background-color: #CCCCCC;
+	padding: 20px;
+	
+}
