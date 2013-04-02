@@ -124,7 +124,7 @@ a .navresize {
 }
 
 .title_info h1 {
-	margin-bottom: 0;
+	margin:5px 0 0 0;
 }
 
 .title_info h3 {
@@ -134,7 +134,6 @@ a .navresize {
 
 .title_info h4{
 	font-weight: 200;
-	padding: 0 0 10px 0;
 }
 
 .title_info ul{
