@@ -111,9 +111,11 @@ a .navresize {
 	position: fixed;
 }
 
+.post{
+	background-color: #DDDDDD;
+}
 
 .title_info{
-	background-color: #DDDDDD;
 	padding: 10px;
 	text-align: center;
 	
