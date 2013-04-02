@@ -21,7 +21,8 @@ a:hover{
 }
 
 article{
-	padding: 0px 0 40px 0;
+	background-color: #CCCCCC;
+	margin-bottom: 20px;
 }
 
 ul, ol {
@@ -146,7 +147,5 @@ a .navresize {
 
 
 .post_content{
-	background-color: #CCCCCC;
 	padding: 20px;
-	
 }
