@@ -111,3 +111,10 @@ a .navresize {
 	position: fixed;
 }
 
+
+.title_info{
+	background-color: #DDDDDD;
+	padding: 10px;
+	text-align: center;
+	
+}
