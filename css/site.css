@@ -119,6 +119,10 @@ a .navresize {
 	
 }
 
+.title_info h1 {
+	margin-bottom: 0;
+}
+
 .title_info h3 {
 	margin: 0;
 	
@@ -129,6 +133,9 @@ a .navresize {
 	padding: 10px 0 10px 0;
 }
 
+.title_info ul{
+	padding: 0 0 20px 0;
+}
 
 .title_info li{
 	display: inline;
