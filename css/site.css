@@ -117,6 +117,10 @@ a .navresize {
 	margin-bottom: 20px;
 }
 
+.carousel{
+	margin-bottom: 0;
+}
+
 .title_info{
 	padding: 0 0 20px 0;
 	text-align: center;
