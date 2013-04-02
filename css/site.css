@@ -119,6 +119,10 @@ a .navresize {
 	
 }
 
+.title_info h3 {
+	padding: 0;
+}
+
 .title_info h4{
 	font-weight: 200;
 	padding: 10px 0 10px 0;
