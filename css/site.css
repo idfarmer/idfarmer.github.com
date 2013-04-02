@@ -134,6 +134,8 @@ a .navresize {
 
 .title_info h4{
 	font-weight: 200;
+	margin: 0;
+	padding: 0;
 }
 
 .title_info ul{
