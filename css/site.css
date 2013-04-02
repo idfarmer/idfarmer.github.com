@@ -123,3 +123,8 @@ a .navresize {
 	font-weight: 200;
 	padding: 10px 0 10px 0;
 }
+
+
+.title_info li{
+	display: inline;
+}
