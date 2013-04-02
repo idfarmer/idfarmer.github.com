@@ -31,10 +31,11 @@ title: Assembly Process
 	{% endif %}
 	{% if post.embed  %} {{ post.embed }} {% endif %}
 	<div class="title_info">
-		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-		<h3 class="tagline">{{ post.tagline }}</li></h3>
 		<h4>{{ post.date | date: "%B %e, %Y" }}</h4>
-		<ul>
+		<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+		<h3 class="tagline">{{ post.tagline }}</li></h3>
+		
+		<ul class="topics">
 			{% capture get_items %}
 			{% for cat in post.category %}
 			{{ cat | first | replace: ' ', '_' }}
