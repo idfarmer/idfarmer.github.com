@@ -146,7 +146,7 @@ a .navresize {
 
 }
 
-.title_info li {
+.topics li {
 	display: inline;
 	padding: 4px 5px 4px 7px;
 	margin: 0 2px 0 2px;
@@ -154,7 +154,7 @@ a .navresize {
 	color: #DDDDDD;
 }
 
-.title_info li a:hover {
+.topics a:hover {
 	background: #00C483;
 }
 
