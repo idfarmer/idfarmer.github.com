@@ -150,15 +150,15 @@ a .navresize {
 	display: inline;
 	padding: 4px 5px 4px 7px;
 	margin: 0 2px 0 2px;
-	
+	background-color: #666666;
 	color: #DDDDDD;
 }
 
-.topics li {
-	background-color: #666666;
+.topics li a{
+	color: #DDDDDD;
 }
 
-.topics li:hover {
+.topics li a:hover {
 	background-color: #00C483;
 }
 
