@@ -165,8 +165,9 @@ a .navresize {
 
 .post_content {
 	background-color: #CCCCCC;
+	padding: 20px;
 }
 
 .post_content p{
-	padding: 20px;
+
 }
