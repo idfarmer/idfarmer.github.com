@@ -11,14 +11,12 @@ hr{
 }
 
 a {
-	color: #444444;	
+	color: #333333;	
 }
 
 a:hover{
-	color: #333333;
+	color: #00C483;
 	text-decoration: none;
-	padding: 0;
-	margin: 0;
 }
 
 article{
