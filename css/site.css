@@ -146,8 +146,11 @@ a .navresize {
 
 }
 
-.title_info li{
+.title_info li a{
 	display: inline;
+	padding: 4px;
+	margin: 0 2px 0 2px;
+	background-color: #666666;
 }
 
 
