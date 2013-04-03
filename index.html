@@ -65,7 +65,7 @@ title: Assembly Process
 				{% capture this_word %}
 				{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
 				{% endcapture %}
-				<a href="/tags.html#{{ this_word }}"><li class="tag">{{ this_word }}</li></a>
+				<li class="tag"><a href="/tags.html#{{ this_word }}">{{ this_word }}</a></li>
 			{% endfor %}
 		</ul>
 	</div>
