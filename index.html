@@ -87,7 +87,7 @@ title: Assembly Process
 		</li>
 		
 		
-			{% if paginator.next_page == paginator.total_pages %} <a><li class="span3">The Beginning</li></a> {% else %}<a href="/page{{ paginator.next_page }}/"><li class="span3">Toward the past</li></a> {% endif %}
+			{% if paginator.page == paginator.total_pages %} <a><li class="span3">The Beginning</li></a> {% else %}<a href="/page{{ paginator.next_page }}/"><li class="span3">Toward the past</li></a> {% endif %}
 		
 	</ul>
 </div>
