@@ -155,11 +155,11 @@ a .navresize {
 }
 
 .topics a li {
-	background: #00C483;
+	background-color: #666666;
 }
 
-.topics li a:hover {
-	background: #00C483;
+.topics a:hover li {
+	background-color: #00C483;
 }
 
 
