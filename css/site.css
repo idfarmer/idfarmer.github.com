@@ -154,6 +154,10 @@ a .navresize {
 	color: #DDDDDD;
 }
 
+a:hover .title_info li {
+	background: #00C483;
+}
+
 
 .post_content{
 	padding: 20px;
