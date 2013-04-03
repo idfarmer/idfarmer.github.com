@@ -11,12 +11,12 @@ hr{
 }
 
 a {
-	color: #333333;
-	text-decoration: underline;
+	color: #444444;	
 }
 
 a:hover{
 	color: #333333;
+	background-color: #00C483;
 	text-decoration: none;
 }
 
@@ -156,7 +156,6 @@ a .navresize {
 
 .topics a li {
 	background-color: #666666;
-	text-decoration: underline;
 }
 
 .topics a:hover li {
