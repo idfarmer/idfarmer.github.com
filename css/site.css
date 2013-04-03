@@ -154,7 +154,7 @@ a .navresize {
 	color: #DDDDDD;
 }
 
-a:hover .title_info li {
+.title_info li a:hover {
 	background: #00C483;
 }
 
