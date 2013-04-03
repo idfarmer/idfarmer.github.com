@@ -158,7 +158,7 @@ a .navresize {
 	color: #DDDDDD;
 }
 
-.topics li a:hover {
+.topics li:hover {
 	background-color: #00C483;
 }
 
