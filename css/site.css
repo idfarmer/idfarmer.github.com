@@ -23,7 +23,6 @@ a:hover{
 }
 
 article{
-	background-color: #DDDDDD;
 	margin-bottom: 30px;
 }
 
@@ -176,8 +175,7 @@ a .navresize {
 
 
 .post_content {
-	background-color: #CCCCCC;
-	padding: 20px;
+	padding: 20px 0;
 }
 
 .post_content img{
