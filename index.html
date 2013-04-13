@@ -5,72 +5,72 @@ title: Assembly Process
 
 {% for post in paginator.posts %}
 	<article class="post">
-	{% if post.number_of_images == 1 %}
-		{% for image in post.images %}
-			{% for image_url in image %}
-				<a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a>
-			{% endfor %}
-		{% endfor %}
-	{% elsif post.number_of_images >= 2 %}
-		<div id="myCarousel-{{page.id}}" class="carousel slide">
-			<!-- Carousel items -->
-			<div class="carousel-inner">
-				{% for image in post.images %}
-					{% if forloop.first %}{% for image_url in image %} <div class="item active" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
-					{% else %}{% for image_url in image %} <div class="item" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
-					{% endif %}
-				{% endfor %}
-			</div>
-
-			<!-- Carousel nav -->
-			<a class="carousel-control left" href="#myCarousel-{{page.id}}" data-slide="prev">&lsaquo;</a>
-			<a class="carousel-control right" href="#myCarousel-{{page.id}}" data-slide="next">&rsaquo;</a>
-		</div>
-	
-	{% endif %}
-	{% if post.embed  %} {{ post.embed }} {% endif %}
-	<div class="title_info">
-		<h4>{{ post.date | date: "%B %e, %Y" }}</h4>
-		<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-		<h3 class="tagline">{{ post.tagline }}</li></h3>
+		<div class="title_info">
+			<h4>{{ post.date | date: "%B %e, %Y" }}</h4>
+			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<h3 class="tagline">{{ post.tagline }}</li></h3>
 		
-		<ul class="topics">
-			{% capture get_items %}
-			{% for cat in post.category %}
-			{{ cat | first | replace: ' ', '_' }}
-			{% endfor %}
-			{% endcapture %}
-			{% capture num_words %}
-			{{ get_items | split:' ' | sort | join:' ' | number_of_words }}
-			{% endcapture %}
-		    
-			{% for item in (1..num_words) %}
-				{% capture this_word %}
-				{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
+			<ul class="topics">
+				{% capture get_items %}
+				{% for cat in post.category %}
+				{{ cat | first | replace: ' ', '_' }}
+				{% endfor %}
 				{% endcapture %}
-				<li class="category"><a href="/categories.html#{{ this_word }}">{{ this_word }}</a></li>
-			{% endfor %}
-			
-			{% capture get_items %}
-			{% for cat in post.tags %}
-			{{ cat | first | replace: ' ', '_' }}
-			{% endfor %}
-			{% endcapture %}
-			{% capture num_words %}
-			{{ get_items | split:' ' | sort | join:' ' | number_of_words }}
-			{% endcapture %}
-		    
-			{% for item in (1..num_words) %}
-				{% capture this_word %}
-				{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
+				{% capture num_words %}
+				{{ get_items | split:' ' | sort | join:' ' | number_of_words }}
 				{% endcapture %}
-				<li class="tag"><a href="/tags.html#{{ this_word }}">{{ this_word }}</a></li>
+			    
+				{% for item in (1..num_words) %}
+					{% capture this_word %}
+					{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
+					{% endcapture %}
+					<li class="category"><a href="/categories.html#{{ this_word }}">{{ this_word }}</a></li>
+				{% endfor %}
+				
+				{% capture get_items %}
+				{% for cat in post.tags %}
+				{{ cat | first | replace: ' ', '_' }}
+				{% endfor %}
+				{% endcapture %}
+				{% capture num_words %}
+				{{ get_items | split:' ' | sort | join:' ' | number_of_words }}
+				{% endcapture %}
+			    
+				{% for item in (1..num_words) %}
+					{% capture this_word %}
+					{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
+					{% endcapture %}
+					<li class="tag"><a href="/tags.html#{{ this_word }}">{{ this_word }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		{% if post.number_of_images == 1 %}
+			{% for image in post.images %}
+				{% for image_url in image %}
+					<a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a>
+				{% endfor %}
 			{% endfor %}
-		</ul>
-	</div>
-	<div class="post_content">
-      	{{ post.content }}
-	</div>
+		{% elsif post.number_of_images >= 2 %}
+			<div id="myCarousel-{{page.id}}" class="carousel slide">
+				<!-- Carousel items -->
+				<div class="carousel-inner">
+					{% for image in post.images %}
+						{% if forloop.first %}{% for image_url in image %} <div class="item active" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
+						{% else %}{% for image_url in image %} <div class="item" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
+						{% endif %}
+					{% endfor %}
+				</div>
+	
+				<!-- Carousel nav -->
+				<a class="carousel-control left" href="#myCarousel-{{page.id}}" data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#myCarousel-{{page.id}}" data-slide="next">&rsaquo;</a>
+			</div>
+		
+		{% endif %}
+		{% if post.embed  %} {{ post.embed }} {% endif %}
+		<div class="post_content">
+		{{ post.content }}
+		</div>
 	</article>
 	<hr>
 {% endfor %}
