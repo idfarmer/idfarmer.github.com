@@ -1,8 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="description" content="Brave Location Blog - Web, Mobile and Big Data stuff"/>
 <link rel="icon" href="/favicon.ico" />
-<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
-<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="/css/bootstrap.css">
 {% capture contenthtml %}{% if page.content contains '%' %}Brave Location Blog Home Page{% else %}{{ page.content | markdownify  }} ...{% endif %}{% endcapture %}
 {% capture contentescaped %}{{ contenthtml | replace:'"',''  }}{% endcapture %}
