@@ -33,6 +33,7 @@ footer{
 	background-color: #CCCCCC;
 	position: relative;
 	float: left;
+	width: 100%;
 }
 
 ul, ol {
