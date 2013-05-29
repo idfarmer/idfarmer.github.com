@@ -18,7 +18,7 @@ a {
 
 a:hover{
 	color: #333333;
-	background-color: #00C483;
+	background-color: #0f68c3;
 	text-decoration: none;
 }
 
@@ -85,7 +85,7 @@ p {
 }
 
 .menu a:hover li{
-	background-color: #00C483;
+	background-color: #0f68c3;
 }
 
 
@@ -170,7 +170,7 @@ a .navresize {
 }
 
 .topics li:hover {
-	background-color: #00C483;
+	background-color: #0f68c3;
 }
 
 
