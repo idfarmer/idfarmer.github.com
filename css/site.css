@@ -31,6 +31,8 @@ footer{
 	padding: 20px 0 20px 0;
 	margin-top: 30px;
 	background-color: #CCCCCC;
+	position: relative;
+	float: left;
 }
 
 ul, ol {
