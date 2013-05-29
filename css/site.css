@@ -40,6 +40,10 @@ footer{
 	text-shadow: 0 -1px 0 #BBB;
 }
 
+footer a{
+	text-decoration: underline;
+}
+
 ul, ol {
 	padding: 0;
 	margin: 0 0 0px 0px;
