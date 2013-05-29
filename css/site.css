@@ -126,6 +126,10 @@ a .navresize {
 }
 
 .pagination-nav {
+	display: block;
+	float: left;
+	position: relative;
+	margin-bottom: 40px;
 
 }
 .pagination-nav ul {
