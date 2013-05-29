@@ -166,12 +166,13 @@ a .navresize {
 	display: inline;
 	padding: 4px 5px 4px 7px;
 	margin: 0 2px 0 2px;
-	background-color: #666666;
-	color: #DDDDDD;
+	background-color: #CCCCCC;
+	font-size: 12px;
+	font-weight: 300;
 }
 
 .topics li a{
-	color: #DDDDDD;
+	color: #F0F0F0;
 }
 
 .topics li:hover {
