@@ -42,6 +42,8 @@ footer{
 
 footer a{
 	text-decoration: underline;
+	text-shadow: 0 -1px 0 #BBB;
+	color: #F0F0F0;
 }
 
 ul, ol {
