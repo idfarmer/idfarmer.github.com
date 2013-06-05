@@ -102,14 +102,12 @@ blockquote {
 
 #header a{
 	color:#333333;
-	text-shadow:0 1px 0 #FFFFFF;
-	text-decoration: none;
+	font-size: 20px;
 
 
 }
 
 #logo {
-	font-size: 200%;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: inherit;
