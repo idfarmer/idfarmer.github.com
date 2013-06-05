@@ -1,6 +1,7 @@
 body{
 	background-color: #F0F0F0;
 	font-family: 'Open Sans', sans-serif;
+	margin-top: 40px;
 }
 
 
@@ -54,12 +55,6 @@ ul, ol {
 
 p {
 	margin: 0;
-}
-
-.foobar{
-	border-top: solid 3px #333333;
-	padding-bottom: 20px;
-	
 }
 
 .logo{	
