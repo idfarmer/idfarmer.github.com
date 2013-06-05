@@ -132,6 +132,7 @@ a .navresize {
 }
 
 .pagination-nav li{
+	padding: 15px
 	display: inline-block;
 	
 }
