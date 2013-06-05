@@ -132,9 +132,12 @@ a .navresize {
 }
 
 .pagination-nav li{
-	padding: 15px;
 	display: inline-block;
 	
+}
+
+.pagination-nav li a{
+	padding: 15px;
 }
 
 .stuck{
