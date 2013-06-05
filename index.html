@@ -80,14 +80,14 @@ title: Assembly Process
 <div class="pagination-nav">
 	<ul class="">
 		
-			{% if paginator.page == 1 %} <a href="#Please-wait-for-future-to-load"><li>U+00AB Toward the future</li></a> {% elsif paginator.previous_page == 1 %} <a href="/"><li>U+00AB Toward the present</li></a> {% else %} <a href="/page{{ paginator.previous_page }}/"><li>U+00AB Toward the present</li></a> {% endif %}
+			{% if paginator.page == 1 %} <a href="#Please-wait-for-future-to-load"><li>Toward the future</li></a> {% elsif paginator.previous_page == 1 %} <a href="/"><li>Toward the present</li></a> {% else %} <a href="/page{{ paginator.previous_page }}/"><li>Toward the present</li></a> {% endif %}
 		
 		<li class="snippet">
 			Displaying page {{ paginator.page }} of {{ paginator.total_pages }}
 		</li>
 		
 		
-			{% if paginator.page == paginator.total_pages %} <a><li>The Beginning</li></a> {% else %}<a href="/page{{ paginator.next_page }}/"><li>Toward the past U+00BB</li></a> {% endif %}
+			{% if paginator.page == paginator.total_pages %} <a><li>The Beginning</li></a> {% else %}<a href="/page{{ paginator.next_page }}/"><li>Toward the past</li></a> {% endif %}
 		
 	</ul>
 </div>
