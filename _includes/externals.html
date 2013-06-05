@@ -6,7 +6,7 @@
 {% capture contenthtml %}{% if page.content contains '%' %}Brave Location Blog Home Page{% else %}{{ page.content | markdownify  }} ...{% endif %}{% endcapture %}
 {% capture contentescaped %}{{ contenthtml | replace:'"',''  }}{% endcapture %}
 {% capture contenttext %}{{ contentescaped | strip_html  }}{% endcapture %}
-<link type="text/css" rel="stylesheet" href="/css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="/css/bootstrap-responsive.css">
 <link type="text/css" rel="stylesheet" href="/css/site.css" />
 
 
