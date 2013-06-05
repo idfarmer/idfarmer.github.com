@@ -2,7 +2,6 @@ body{
 	background-color: #F0F0F0;
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 40px;
-	min-height: 500px;	
 }
 
 
@@ -136,6 +135,9 @@ a .navresize {
 	
 }
 
+.content{
+	min-height: 600px;
+}
 
 .stuck{
 	position: fixed;
