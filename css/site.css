@@ -154,7 +154,10 @@ a .navresize {
 }
 
 .title_info h1 {
-	margin:5px 0 0 0;
+	margin:10px 0 18px 0;
+	line-height: 50px;
+	font-size: 50px;
+	font-weight: 200;
 }
 
 .title_info h1 a {
