@@ -71,6 +71,11 @@ p {
 	
 }
 
+.menu{
+	margin: 0 50px;
+	
+}
+
 .menu .snippet{
 	background-color: #f0f0f0;
 	padding: 15px 0 15px 0;
