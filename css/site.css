@@ -197,7 +197,6 @@ a .navresize {
 	display: inline;
 	padding: 4px 5px 4px 7px;
 	margin: 0 2px 0 2px;
-	background-color: #CCCCCC;
 	font-size: 12px;
 	font-weight: 300;
 }
@@ -206,10 +205,13 @@ a .navresize {
 	color: #F0F0F0;
 }
 
-.topics li:hover {
-	background-color: #0f68c3;
+.category {
+	background-color: #1d87f4;
 }
 
+.tag {
+	background-color: #0f68c3;
+}
 
 .post_content {
 	padding: 20px 0;
