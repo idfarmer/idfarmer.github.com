@@ -9,7 +9,7 @@
 <div class="container"> <!-- Main container -->
 <!-- Begin Body Columns -->
     <div class="row">
-        <div class="span9"> <!-- Main content column -->
+        <div class="span12"> <!-- Main content column -->
                 {% include navmenu.html %}
                 {{ content }}
         </div> <!-- End main content -->
@@ -17,11 +17,9 @@
 </div> <!-- End main container -->
 <footer >
     <div class="container">
-        <div class="row">
-            <div class="span12">
-                {% include footer.html %}
-            </div>
-        </div>
+
+        % include footer.html %}
+
     </div>
 </footer>
 {% include js.html %}
