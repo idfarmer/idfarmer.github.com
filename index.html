@@ -24,7 +24,7 @@ title: Assembly Process
 					{% capture this_word %}
 					{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
 					{% endcapture %}
-					<li class="category"><a href="/categories.html#{{ this_word }}">{{ this_word }}</a></li>
+					<li class="category"><a href="">{{ this_word }}</a></li>
 				{% endfor %}
 				
 				{% capture get_items %}
@@ -40,7 +40,7 @@ title: Assembly Process
 					{% capture this_word %}
 					{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
 					{% endcapture %}
-					<li class="tag"><a href="/tags.html#{{ this_word }}">{{ this_word }}</a></li>
+					<li class="tag"><a href="">{{ this_word }}</a></li>
 				{% endfor %}
 			</ul>
 		</div>
