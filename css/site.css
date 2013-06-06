@@ -209,6 +209,13 @@ a .navresize {
 }
 
 
+.post_content p,
+.post_content h2,
+.post_content h3{
+	
+	margin: 0 70px;
+}
+
 .post_content {
 	padding: 20px 0;
 }
