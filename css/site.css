@@ -188,7 +188,8 @@ a .navresize {
 	padding: 0;
 }
 
-.title_info ul{
+.title_info img{
+	margin: 0 0 40px 0;
 
 }
 
@@ -211,7 +212,6 @@ a .navresize {
 
 
 .post_content {
-	padding: 40px 0;
 	margin: 0 200px;
 	font-size: 15px;
 	line-height: 24px;
