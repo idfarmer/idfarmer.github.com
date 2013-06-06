@@ -78,9 +78,9 @@ title: Assembly Process
 
 <!-- Pagination links -->
 <div class="pagination-nav">
-	<ul class="">
+	<ul class="row">
 		
-			{% if paginator.page == 1 %} <a href="#Please-wait-for-future-to-load"><li>Toward the future</li></a> {% elsif paginator.previous_page == 1 %} <a href="/"><li>Toward the present</li></a> {% else %} <a href="/page{{ paginator.previous_page }}/"><li>Toward the present</li></a> {% endif %}
+			{% if paginator.page == 1 %} <a class="span3" href="#Please-wait-for-future-to-load"><li>Toward the future</li></a> {% elsif paginator.previous_page == 1 %} <a class="span3" href="/"><li>Toward the present</li></a> {% else %} <a class="span3" href="/page{{ paginator.previous_page }}/"><li>Toward the present</li></a> {% endif %}
 		
 		<li class="snippet">
 			Displaying page {{ paginator.page }} of {{ paginator.total_pages }}
