@@ -71,8 +71,10 @@ p {
 	
 }
 
-#navmenu{
-	margin: 0 100px;
+
+.menu{
+	margin: 0 70px;
+	
 }
 
 .menu .snippet{
