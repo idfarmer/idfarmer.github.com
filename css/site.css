@@ -199,19 +199,10 @@ a .navresize {
 	margin: 0 2px 0 2px;
 	font-size: 12px;
 	font-weight: 300;
-}
-
-.topics li a{
 	color: #F0F0F0;
+	background: #BBB;
 }
 
-.category {
-	background-color: #1d87f4;
-}
-
-.tag {
-	background-color: #0f68c3;
-}
 
 .post_content {
 	padding: 20px 0;
