@@ -149,6 +149,12 @@ a .navresize {
 	
 }
 
+.pagination-nav li .snippet{
+	background-color: #F0F0F0;
+	padding: 10px 0;
+	color: #333;
+}
+
 .content{
 	min-height: 600px;
 }
