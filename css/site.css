@@ -124,7 +124,7 @@ a .navresize {
 
 .pagination-nav {
 	text-align: center;
-	margin: 50px 0 150px 0;
+	margin: 50px 0 50px 0;
 
 }
 .pagination-nav ul {
@@ -136,7 +136,6 @@ a .navresize {
 	padding: 10px 40px;
 	color: #F0F0F0;
 	display: inline;
-	margin: 0 20px;
 }
 
 .pagination-nav a:hover li{
@@ -149,6 +148,7 @@ a .navresize {
 	background-color: #F0F0F0;
 	padding: 10px 0;
 	color: #333;
+	margin: 0 40px;
 }
 
 .content{
