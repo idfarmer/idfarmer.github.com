@@ -78,16 +78,16 @@ title: Assembly Process
 
 <!-- Pagination links -->
 <div class="pagination-nav">
-	<ul class="row">
+	<ul>
 		
-			{% if paginator.page == 1 %} <a class="span3" href="#Please-wait-for-future-to-load"><li>Toward the future</li></a> {% elsif paginator.previous_page == 1 %} <a class="span3" href="/"><li>Toward the present</li></a> {% else %} <a class="span3" href="/page{{ paginator.previous_page }}/"><li>Toward the present</li></a> {% endif %}
+			{% if paginator.page == 1 %} <a class="span4" href="#Please-wait-for-future-to-load"><li>Toward the future</li></a> {% elsif paginator.previous_page == 1 %} <a class="span4" href="/"><li>Toward the present</li></a> {% else %} <a class="span4" href="/page{{ paginator.previous_page }}/"><li>Toward the present</li></a> {% endif %}
 		
-		<li class="snippet span3">
+		<li class="snippet span4">
 			Displaying page {{ paginator.page }} of {{ paginator.total_pages }}
 		</li>
 		
 		
-			{% if paginator.page == paginator.total_pages %} <a class="span3"><li>The Beginning</li></a> {% else %}<a class="span3" href="/page{{ paginator.next_page }}/"><li>Toward the past</li></a> {% endif %}
+			{% if paginator.page == paginator.total_pages %} <a class="span4"><li>The Beginning</li></a> {% else %}<a class="span4" href="/page{{ paginator.next_page }}/"><li>Toward the past</li></a> {% endif %}
 		
 	</ul>
 </div>
