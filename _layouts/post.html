@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>{{ page.title }}</title>
-{% include externals.html %}
-<meta property="og:title" content="{{ page.title }}"/>
-</head>
-<body>
-<div class="container"> <!-- Main container -->
-<!-- Begin Body Columns -->
-    <div class="row"><div class="span12"></div></div>
-    <div class="row">
-        <div class="span2 stuck"> <!-- Main sidebar -->
-            {% include navmenu.html %}
-        </div> <!-- End main sidebar -->
-        <div class="span10 offset2"> <!-- Main content column -->
-			<div class="title_info">
-			<h4>{{ page.date | date: "%B %e, %Y" }}</h4>
-			<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-			<h3 class="tagline">{{ page.tagline }}</li></h3>
+---
+layout: default
+title: Assembly Process
+---
+
+{% for post in paginator.posts %}
+	<article class="post">
+		<div class="title_info">
+			<h4>{{ post.date | date: "%B %e, %Y" }}</h4>
+			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<h3 class="tagline">{{ post.tagline }}</li></h3>
 		
 			<ul class="topics">
 				{% capture get_items %}
-				{% for cat in page.category %}
+				{% for cat in post.category %}
 				{{ cat | first | replace: ' ', '_' }}
 				{% endfor %}
 				{% endcapture %}
@@ -37,7 +28,7 @@
 				{% endfor %}
 				
 				{% capture get_items %}
-				{% for cat in page.tags %}
+				{% for cat in post.tags %}
 				{{ cat | first | replace: ' ', '_' }}
 				{% endfor %}
 				{% endcapture %}
@@ -53,17 +44,17 @@
 				{% endfor %}
 			</ul>
 		</div>
-		{% if page.number_of_images == 1 %}
-			{% for image in page.images %}
+		{% if post.number_of_images == 1 %}
+			{% for image in post.images %}
 				{% for image_url in image %}
 					<a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a>
 				{% endfor %}
 			{% endfor %}
-		{% elsif page.number_of_images >= 2 %}
+		{% elsif post.number_of_images >= 2 %}
 			<div id="myCarousel-{{page.id}}" class="carousel slide">
 				<!-- Carousel items -->
 				<div class="carousel-inner">
-					{% for image in page.images %}
+					{% for image in post.images %}
 						{% if forloop.first %}{% for image_url in image %} <div class="item active" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
 						{% else %}{% for image_url in image %} <div class="item" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
 						{% endif %}
@@ -76,20 +67,10 @@
 			</div>
 		
 		{% endif %}
-		{% if page.embed  %} {{ page.embed }} {% endif %}
-                {{ content }}
-        </div> <!-- End main content -->
-    </div> 
-</div> <!-- End main container -->
-<footer >
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                {% include footer.html %}
-            </div>
-        </div>
-    </div>
-</footer>
-{% include js.html %}
-</body>
-</html>
+		{% if post.embed  %} {{ post.embed }} {% endif %}
+		<div class="post_content">
+		{{ post.content }}
+		</div>
+	</article>
+	<hr>
+{% endfor %}
