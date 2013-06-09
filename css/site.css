@@ -130,7 +130,7 @@ a .navresize {
 
 .pagination-nav {
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 
 }
 .pagination-nav ul {
@@ -138,7 +138,12 @@ a .navresize {
 }
 
 .pagination-nav li{
-	display: inline-block;
+	background-color: #1d87f4;
+}
+
+.pagination-nav a:hover li{
+	background-color: #0f68c3;
+	color: #F0F0F0;
 	
 }
 
