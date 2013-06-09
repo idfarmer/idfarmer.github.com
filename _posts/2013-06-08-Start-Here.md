@@ -1,7 +1,7 @@
 ---
 layout: post
 category : 
-tagline: ""
+tagline: "The Process"
 tags : []
 ---
 
