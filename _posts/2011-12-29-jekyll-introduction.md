@@ -1,8 +1,8 @@
 ---
 layout: post
-category : lessons
-tagline: "Supporting tagline"
-tags : [intro, beginner, jekyll, tutorial]
+category : 
+tagline: ""
+tags : []
 ---
 
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
