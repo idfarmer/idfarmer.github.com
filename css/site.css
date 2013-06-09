@@ -139,6 +139,8 @@ a .navresize {
 
 .pagination-nav li{
 	background-color: #1d87f4;
+	padding: 10px 0;
+	color: #F0F0F0;
 }
 
 .pagination-nav a:hover li{
