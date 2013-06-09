@@ -11,71 +11,72 @@
     <div class="row">
         <div class="span12"> <!-- Main content column -->
                 {% include navmenu.html %}
-			<div class="title_info">
-			<h4>{{ page.date | date: "%B %e, %Y" }}</h4>
-			<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-			<h3 class="tagline">{{ page.tagline }}</li></h3>
-		
-			<ul class="topics">
-				{% capture get_items %}
-				{% for cat in page.category %}
-				{{ cat | first | replace: ' ', '_' }}
-				{% endfor %}
-				{% endcapture %}
-				{% capture num_words %}
-				{{ get_items | split:' ' | sort | join:' ' | number_of_words }}
-				{% endcapture %}
-			    
-				{% for item in (1..num_words) %}
-					{% capture this_word %}
-					{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
-					{% endcapture %}
-					<li class="category">{{ this_word }}</li>
-				{% endfor %}
-				
-				{% capture get_items %}
-				{% for cat in page.tags %}
-				{{ cat | first | replace: ' ', '_' }}
-				{% endfor %}
-				{% endcapture %}
-				{% capture num_words %}
-				{{ get_items | split:' ' | sort | join:' ' | number_of_words }}
-				{% endcapture %}
-			    
-				{% for item in (1..num_words) %}
-					{% capture this_word %}
-					{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
-					{% endcapture %}
-					<li class="tag">{{ this_word }}</li>
-				{% endfor %}
-			</ul>
-		</div>
-		{% if page.number_of_images == 1 %}
-			{% for image in page.images %}
-				{% for image_url in image %}
-					<a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a>
-				{% endfor %}
-			{% endfor %}
-		{% elsif page.number_of_images >= 2 %}
-			<div id="myCarousel-{{page.id}}" class="carousel slide">
-				<!-- Carousel items -->
-				<div class="carousel-inner">
-					{% for image in page.images %}
-						{% if forloop.first %}{% for image_url in image %} <div class="item active" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
-						{% else %}{% for image_url in image %} <div class="item" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
-						{% endif %}
-					{% endfor %}
+			<article class="post">	
+				<div class="title_info">
+					<h4>{{ page.date | date: "%B %e, %Y" }}</h4>
+					<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+					<h3 class="tagline">{{ page.tagline }}</li></h3>
+					<ul class="topics">
+						{% capture get_items %}
+						{% for cat in page.category %}
+						{{ cat | first | replace: ' ', '_' }}
+						{% endfor %}
+						{% endcapture %}
+						{% capture num_words %}
+						{{ get_items | split:' ' | sort | join:' ' | number_of_words }}
+						{% endcapture %}
+						
+						{% for item in (1..num_words) %}
+							{% capture this_word %}
+							{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
+							{% endcapture %}
+							<li class="category">{{ this_word }}</li>
+						{% endfor %}
+						
+						{% capture get_items %}
+						{% for cat in page.tags %}
+						{{ cat | first | replace: ' ', '_' }}
+						{% endfor %}
+						{% endcapture %}
+						{% capture num_words %}
+						{{ get_items | split:' ' | sort | join:' ' | number_of_words }}
+						{% endcapture %}
+						
+						{% for item in (1..num_words) %}
+							{% capture this_word %}
+							{{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last | replace: '_', ' '  }}
+							{% endcapture %}
+							<li class="tag">{{ this_word }}</li>
+						{% endfor %}
+					</ul>
 				</div>
-	
-				<!-- Carousel nav -->
-				<a class="carousel-control left" href="#myCarousel-{{page.id}}" data-slide="prev">&lsaquo;</a>
-				<a class="carousel-control right" href="#myCarousel-{{page.id}}" data-slide="next">&rsaquo;</a>
-			</div>
+			{% if page.number_of_images == 1 %}
+				{% for image in page.images %}
+					{% for image_url in image %}
+						<a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a>
+					{% endfor %}
+				{% endfor %}
+			{% elsif page.number_of_images >= 2 %}
+				<div id="myCarousel-{{page.id}}" class="carousel slide">
+					<!-- Carousel items -->
+					<div class="carousel-inner">
+						{% for image in page.images %}
+							{% if forloop.first %}{% for image_url in image %} <div class="item active" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
+							{% else %}{% for image_url in image %} <div class="item" ><a href="{{ image_url[0] }}"><img src="{{ image_url[1] }}"></a></div> {% endfor %}
+							{% endif %}
+						{% endfor %}
+					</div>
 		
-		{% endif %}
-		{% if page.embed  %} {{ page.embed }} {% endif %}
-                {{ content }}
-        </div> <!-- End main content -->
+					<!-- Carousel nav -->
+					<a class="carousel-control left" href="#myCarousel-{{page.id}}" data-slide="prev">&lsaquo;</a>
+					<a class="carousel-control right" href="#myCarousel-{{page.id}}" data-slide="next">&rsaquo;</a>
+				</div>
+			
+			{% endif %}
+			{% if page.embed  %} {{ page.embed }} {% endif %}
+					{{ content }}
+			</div> <!-- End main content -->
+			</article>	
     </div> 
 </div> <!-- End main container -->
 <footer >
