@@ -40,6 +40,10 @@ footer a{
 	color: #BBB;
 }
 
+.footer_logo{
+	margin: 0 0 30px 0;
+}
+
 ul, ol {
 	padding: 0;
 	margin: 0 0 0px 0px;
@@ -124,7 +128,7 @@ a .navresize {
 
 .pagination-nav {
 	text-align: center;
-	margin: 50px 0 50px 0;
+	margin: 30px 0 30px 0;
 
 }
 .pagination-nav ul {
