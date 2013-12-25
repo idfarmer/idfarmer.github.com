@@ -10,6 +10,10 @@ body{
 
 }
 
+h1, h2, h3, h4, h5{
+	font-family: helvetica, verdana, sans-serif;
+	font-weight: bold;
+}
 
 hr{
 	margin: 30px 100px;
@@ -26,4 +30,5 @@ a:hover{
 	background-color: #0f68c3;
 	text-decoration: none;
 }
+
 
