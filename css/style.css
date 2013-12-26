@@ -2,15 +2,19 @@ body{
 	background-color: #FCFCFC;
 	text-align: center;
 	font-family: georgia;
-	color:#222222;
+	color:#2F2F2F;
 }
 
 .content{
 	margin: 0px auto;
 	padding: 20px;
-	width: 500px;
+	width: 600px;
 	text-align: left;
 
+}
+
+img{
+	padding: 0px 50px;
 }
 
 h1, h2, h3, h4, h5{
