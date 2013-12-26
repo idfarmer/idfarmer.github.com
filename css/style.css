@@ -52,4 +52,11 @@ a:hover{
 	text-decoration: none;
 }
 
+#pages ul{
+	display: inline-block;
+	font-size: 0px;
+}
 
+#pages li{
+	font-size: 20px;
+}
