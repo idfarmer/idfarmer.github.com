@@ -10,6 +10,7 @@ body{
 	padding: 20px;
 	width: 500px;
 	text-align: left;
+	overflow: hidden;
 
 }
 
