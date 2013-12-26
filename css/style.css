@@ -53,7 +53,7 @@ nav{
 }
 
 .blogTitle{
-	width: 100%;
+	display: block;
 	padding:20px;
 	color:#FCFCFC;
 	background-color: #2F2F2F;
