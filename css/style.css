@@ -52,11 +52,17 @@ a:hover{
 	text-decoration: none;
 }
 
+nav{
+	text-align: center;
+}
+
 #pages ul{
-	display: inline-block;
+	margin: 0px auto;
 	font-size: 0px;
 }
 
 #pages li{
 	font-size: 20px;
+	display: inline-block;
 }
+
