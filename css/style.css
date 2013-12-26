@@ -75,7 +75,7 @@ nav{
 }
 
 .caps{
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
 
 #pages ul{
