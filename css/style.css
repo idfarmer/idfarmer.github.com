@@ -74,6 +74,10 @@ nav{
 	text-align: center;
 }
 
+.caps{
+	text-transform: capitalize;
+}
+
 #pages ul{
 	margin: 0px auto;
 	font-size: 0px;
