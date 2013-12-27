@@ -2,7 +2,7 @@ body{
 	background-color: #FCFCFC;
 	text-align: center;
 	font-family: georgia;
-	color:#2F2F2F;
+	color:#EFEFEF;
 }
 
 header{
@@ -84,6 +84,9 @@ nav{
 
 #pages li{
 	font-size: 20px;
+	color: #EFEFEF;
+	padding: 20px;
+	background-color: #1d87f4;
 	display: inline-block;
 }
 
