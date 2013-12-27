@@ -88,10 +88,11 @@ nav{
 
 #pages li a{
 	font-size: 18px;
-	color: #E0E0E0;
+	color: #CCCCCC;
 	padding: 5px 20px;
 	background-color: #FFFFFF;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 #pages li a:hover{
