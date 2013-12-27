@@ -93,3 +93,6 @@ nav{
 	background-color: #2F2F2F;
 }
 
+#pages li a:hover{
+	background-color: #444444;
+}
