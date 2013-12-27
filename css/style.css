@@ -82,8 +82,8 @@ nav{
 	font-size: 0px;
 }
 
-#pages li{
-	font-size: 20px;
+#pages li a{
+	font-size: 20px 5px;
 	color: #EFEFEF;
 	padding: 20px;
 	background-color: #1d87f4;
