@@ -108,3 +108,7 @@ nav{
 
 	padding: 0px 0px 80px 0px;
 }
+
+.post ol{
+	list-style-type:decimal; 
+}
