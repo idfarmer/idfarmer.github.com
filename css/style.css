@@ -98,3 +98,8 @@ nav{
 #pages li a:hover{
 	background-color: #555555;
 }
+
+.post{
+
+	padding: 30px 0px;
+}
