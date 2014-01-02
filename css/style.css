@@ -111,12 +111,17 @@ nav{
 
 .post ol{
 	list-style-type:decimal;
+	padding:0px 0px 0px 25px;
+}
+
+.post ul{
+	list-style-type:circle;
 	padding:0px 0px 0px 20px;
 }
 
 .post 
 
-.post blockquote{
+blockquote{
 padding: 20px 40px;
 background-color: #D0D0D0;
 }
