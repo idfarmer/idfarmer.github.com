@@ -82,16 +82,16 @@ nav{
 	text-transform: uppercase;
 }
 
-#pages ul{
+.nav_list ul{
 	margin: 0px auto;
 	font-size: 0px;
 }
 
-#pages li{
+.nav_list li{
 	display: inline-block;
 }
 
-#pages li a{
+.nav_list li a{
 	font-size: 18px;
 	color: #CCCCCC;
 	padding: 5px 20px;
@@ -100,7 +100,7 @@ nav{
 	font-weight: normal;
 }
 
-#pages li a:hover{
+.nav_list li a:hover{
 	background-color: #555555;
 }
 
