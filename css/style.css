@@ -110,5 +110,13 @@ nav{
 }
 
 .post ol{
-	list-style-type:decimal; 
+	list-style-type:decimal;
+	padding:0px 0px 0px 20px;
+}
+
+.post 
+
+.post blockquote{
+padding: 20px 40px;
+background-color: #D0D0D0;
 }
