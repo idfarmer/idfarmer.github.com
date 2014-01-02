@@ -3,6 +3,8 @@ body{
 	text-align: center;
 	font-family: georgia;
 	color:#2F2F2F;
+	font-size: 18px;
+	line-height: 29px;
 }
 
 header{
@@ -27,8 +29,6 @@ h3{font-size: 24px;}
 h4{font-size: 20px;}
 
 p{
-	font-size: 18px;
-	line-height: 29px;
 	padding: 20px 0px;
 }
 
@@ -119,9 +119,11 @@ nav{
 	padding:0px 0px 0px 20px;
 }
 
-.post 
+.post li{
 
-blockquote{
-padding: 20px 40px;
+}
+
+.post blockquote{
+padding: 20px;
 background-color: #D0D0D0;
 }
