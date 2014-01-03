@@ -86,6 +86,7 @@ nav{
 .nav_list ul{
 	margin: 0px auto;
 	font-size: 0px;
+	padding:0px !important;
 }
 
 .nav_list li{
