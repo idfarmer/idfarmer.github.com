@@ -125,9 +125,22 @@ nav{
 }
 
 .post blockquote{
-padding: 20px;
-background-color: #D0D0D0;
+	padding: 20px;
+	background-color: #D0D0D0;
 }
+
+.meta{}
+
+.relative{
+	position: relative;
+}
+
+.like_button{
+
+	padding: 1px 20px;
+	background-color: #FFFFFF;
+}
+
 
 #footer{
 	text-align: center;
