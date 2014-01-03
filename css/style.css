@@ -136,11 +136,12 @@ nav{
 }
 
 .like_button{
-	padding: 3px 7px 0px 8px;
-
+	padding: 4px 0px 0px 4px;
 	position: absolute;
 	top: 0;
 	margin: -3px 0px 0px 0px;
+	text-decoration: none;
+	background-color: transparent;
 }
 
 .like_button a, a:hover{
