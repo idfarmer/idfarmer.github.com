@@ -132,7 +132,11 @@ nav{
 .meta{}
 
 .meta ul{
-	padding:0px;
+	padding: 0px;
+}
+
+.meta li{
+	padding: 0px;
 }
 
 .relative{
