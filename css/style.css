@@ -115,6 +115,10 @@ nav{
 	text-decoration: none;
 }
 
+.post_title a:hover{
+	text-decoration: underline;
+}
+
 .post ol{
 	list-style-type:decimal;
 	padding:0px 0px 0px 25px;
