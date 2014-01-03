@@ -145,6 +145,7 @@ nav{
 
 .like_button a, a:hover{
 	text-decoration: none;
+	background-color: transparent;
 
 }
 
