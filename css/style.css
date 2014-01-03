@@ -110,6 +110,10 @@ nav{
 	padding: 0px 0px 0px 0px;
 }
 
+.post_title{
+	color:#999999;
+}
+
 .post ol{
 	list-style-type:decimal;
 	padding:0px 0px 0px 25px;
