@@ -110,8 +110,9 @@ nav{
 	padding: 0px 0px 0px 0px;
 }
 
-.post_title{
+.post_title a{
 	color:#999999;
+	text-decoration: none;
 }
 
 .post ol{
