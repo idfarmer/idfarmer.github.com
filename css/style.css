@@ -86,7 +86,6 @@ nav{
 .nav_list ul{
 	margin: 0px auto;
 	font-size: 0px;
-	padding:0px !important;
 }
 
 .nav_list li{
@@ -131,6 +130,10 @@ nav{
 }
 
 .meta{}
+
+.meta ul{
+	padding:0px;
+}
 
 .relative{
 	position: relative;
