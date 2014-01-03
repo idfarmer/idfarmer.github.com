@@ -140,7 +140,12 @@ nav{
 
 	position: absolute;
 	top: 0;
-	margin: -4px 0px 0px 0px;
+	margin: -3px 0px 0px 0px;
+}
+
+.like_button a, a:hover{
+	text-decoration: none;
+
 }
 
 
