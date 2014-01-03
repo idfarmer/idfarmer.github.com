@@ -133,6 +133,7 @@ nav{
 
 .relative{
 	position: relative;
+	width: 32px;
 }
 
 .like_button{
