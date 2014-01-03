@@ -137,9 +137,9 @@ nav{
 
 .like_button{
 	padding: 3px 7px 0px 8px;
-	background-color: #FFFFFF;
+
 	position: absolute;
-	top: 2px;
+	top: 0;
 	margin: -4px 0px 0px 0px;
 }
 
